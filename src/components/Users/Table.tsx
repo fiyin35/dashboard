@@ -41,9 +41,9 @@ export default function AcccessibleTable() {
         <TableHead>
           <TableRow>
             <TableCell className="table-head">Name/Email</TableCell>
-            <TableCell className="table-head" align="right">Type</TableCell>
-            <TableCell className="table-head"align="right">Status</TableCell>
-            <TableCell className="table-head" align="right">Date</TableCell>
+            <TableCell className="table-head">Type</TableCell>
+            <TableCell className="table-head">Status</TableCell>
+            <TableCell className="table-head">Date</TableCell>
             <TableCell align="right"></TableCell>
           </TableRow>
         </TableHead>
@@ -52,16 +52,16 @@ export default function AcccessibleTable() {
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
                 <div className="table-name">
-                   <div> <img src={row.avatar} alt="avatar"/> </div> 
+                   <div> <img style={{borderRadius: '7px'}} src={row.avatar} alt="avatar"/> </div> 
                    <div className="table-title"> 
                       <div className="tablename">{row.name}</div> <div className="table-email">{row.email}</div> 
                    </div> 
                 </div>
               </TableCell>
-             <TableCell  className="table-type" align="right">{row.type}</TableCell>
-              <TableCell className="table-status" align="right"><div className={row.status === 'Pending' ? 'color-pending' : 'color-active'}>{row.status}</div></TableCell>
-              <TableCell className="table-date" align="right"><div className="date">{row.date}</div></TableCell>
-              <TableCell align="right"><img  src={arrowRight} alt="arrow-right" /></TableCell>
+             <TableCell  className="table-type" >{row.type}</TableCell>
+              <TableCell className="table-status"><div className={row.status === 'Pending' ? 'color-pending' : 'color-active'}>{row.status}</div></TableCell>
+              <TableCell className="table-date" ><div className="date">{row.date}</div></TableCell>
+              <TableCell ><img  src={arrowRight} alt="arrow-right" /></TableCell>
             </TableRow>
           ))}
         </TableBody>
