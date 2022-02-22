@@ -9,7 +9,7 @@
 }
 
 .app__chart-stat {
-    width: 850px;
+    width: 1000px;
     height: 334px;
     border-radius: 10px;
     background-color: var(--color-white);
@@ -96,6 +96,8 @@
     background: linear-gradient(135deg, #990D81 0%, #861072 100%);
     border-radius: 12px;
     margin-right: 28px;
+    margin-left: 20px;
+    margin-top: 1rem;
 }
 
 .app__chart-barchart-text {
@@ -166,6 +168,12 @@
         margin-left: 20px;
     
     }
+}
+
+@media screen and (max-width: 1800px) { 
+    .app__chart-stat {
+        width: 800px;
+  }
 }
 
 @media screen and (max-width: 1549px) { 
