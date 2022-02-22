@@ -161,10 +161,10 @@
 
 
 
-@media screen and (max-width: 1449px) { 
+@media screen and (max-width: 1526px) { 
 
     .app__chart-barchart {
-        height: 334px;
+        height: 294px;
         width: 340px;
         margin-left: 20px;
         margin-top: 1rem;
