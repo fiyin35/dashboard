@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Table from '@mui/material/Table';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
@@ -10,6 +11,7 @@ import team1 from '../../assets/avatars/ivana-square.png';
 import team2 from '../../assets/avatars/team-2.png';
 import team3 from '../../assets/avatars/marie.png';
 import team4 from '../../assets/avatars/kal-visuals-square.png';
+import arrowRight from '../../assets/arrow_right.png';
 
 import './Users.css';
 
@@ -20,17 +22,17 @@ function createData(
   type: string,
   status: string,
   date: string,
-  protein: number,
+  
 ) {
-  return { avatar, email, name, type, status, date, protein };
+  return { avatar, email, name, type, status, date,  };
 }
 
 
 const rows = [
-  createData(team1, 'michael@mail.com', 'Michael Olu', 'New Agent', 'Pending', '23/04/18', 4.0),
-  createData(team2,  'alexa@mail.com', 'Chioma James', 'Account Deactivation', 'Pending', '23/12/20', 4.3),
-  createData(team3,  'laure@mail.com', 'Boluwatife Ade', 'New User', 'Active', '13/04/19', 6.0),
-  createData(team4, 'miriam@mail.com', 'Miriam Eric', 'Email Auth', 'Active', '03/04/21', 6.0),
+  createData(team1, 'michael@mail.com', 'Michael Olu', 'New Agent', 'Pending', '23/04/18' ),
+  createData(team2,  'alexa@mail.com', 'Chioma James', 'Account Deactivation', 'Pending', '23/12/20'),
+  createData(team3,  'laure@mail.com', 'Boluwatife Ade', 'New User', 'Active', '13/04/19' ),
+  createData(team4, 'miriam@mail.com', 'Miriam Eric', 'Email Auth', 'Active', '03/04/21'),
 ];
 
 export default function AcccessibleTable() {
@@ -50,12 +52,17 @@ export default function AcccessibleTable() {
           {rows.map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                <div><img src={team1} alt="avatar"/> {row.name} {row.email}</div>
+                <div className="table-name">
+                   <div> <img src={team1} alt="avatar"/> </div> 
+                   <div className="table-title"> 
+                      <div className="tablename">{row.name}</div> <div className="table-email">{row.email}</div> 
+                   </div> 
+                </div>
               </TableCell>
-              <TableCell align="right">{row.type}</TableCell>
-              <TableCell align="right">{row.status}</TableCell>
-              <TableCell align="right">{row.date}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+             <TableCell  className="table-type" align="right">{row.type}</TableCell>
+              <TableCell className="table-status" align="right">{row.status}</TableCell>
+              <TableCell className="table-date" align="right">{row.date}</TableCell>
+              <TableCell align="right"><img  src={arrowRight} alt="arrow-right" /></TableCell>
             </TableRow>
           ))}
         </TableBody>
