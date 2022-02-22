@@ -8,16 +8,16 @@ function createData(month, value2, value1) {
 }
 
 const data = [
-  createData(undefined, 0),
-  createData('Dec', 25, 30),
-  createData('Jan', 50, 60),
-  createData('Feb', 25, 80),
-  createData('Mar', 70, 63),
-  createData('Apr', 20, 40),
+  createData(undefined, 30, 15),
+  createData('Dec', 50, 25),
+  createData('Jan', 40, 25),
+  createData('Feb', 40, 40),
+  createData('Mar', 90, 25),
+  createData('Apr', 40, 40),
   createData('May', 10, 90),
   createData('Jun', 50, 10),
-  createData(undefined, 50),
-  createData(undefined, 100),
+  createData(undefined, 70, 50),
+  createData(undefined, 40, 100),
 ];
 
 export default function Chart() {

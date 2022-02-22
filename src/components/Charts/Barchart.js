@@ -16,6 +16,8 @@ const Barchart = () => {
       
       
   return (
+
+    <div className="barchart"> 
         <BarChart
         width={350}
         height={250}
@@ -23,7 +25,7 @@ const Barchart = () => {
         margin={{
             top: 29,
             right: 30,
-            left: 20,
+            left: 5,
             bottom: 5,
         }}
         barSize={7}
@@ -44,6 +46,7 @@ const Barchart = () => {
          }}
          />
         </BarChart>
+</div>
   )
 }
 
