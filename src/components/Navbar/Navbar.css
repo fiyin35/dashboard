@@ -1,0 +1,121 @@
+.app__navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0; 
+    margin-bottom: 39px;
+    height: 80px;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.app__navbar-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.app__navbar-dashboard {
+    margin-left: 20px;
+}
+
+.language-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-icon {
+    height: 6px;
+    width: 12px;
+    padding-left: 3px;
+}
+
+.language {
+    font-family: var(font-base);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    letter-spacing: 0.75px;
+    color: #767676;
+}
+
+.app__navbar-header {
+    font-family: var(--font-base);
+    font-weight: 700; 
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: var(--color-black);
+}
+
+.app__navbar-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 51px;
+} 
+
+input::placeholder {
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    width: 271px;
+    height: 40px;
+    
+}
+
+.searchIcon {
+    color: #D6D7E3;  
+    position: absolute;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.input-field {
+    padding: 10px 10px 10px 2rem;
+    border-radius: 6px;
+    background-color: #FAFAFA;
+    outline: none;
+}
+
+.app__navbar-avatars {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.app__navbar-notification {
+    margin-left: 10px;  
+} 
+
+/* @media screen and (min-width: 2000px) {
+    .app__navbar-end {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-end {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+} */

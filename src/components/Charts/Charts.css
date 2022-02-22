@@ -1,0 +1,139 @@
+.app__chart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px; 
+    align-items: center;
+    width: 100%;
+}
+
+.app__chart-stat {
+    width: 850px;
+    height: 334px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.06);
+    margin-left: 20px;
+
+}
+
+.app__chart-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 19px;
+    margin-left: 20px;
+}
+
+.app__chart-inflo {
+    margin-right: 22rem;
+}
+
+.app__chart-paragraph {
+    font-family: var(--font-base);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #171717;
+}
+
+.app__chart-list {
+    font-family: var(--font-base); /* Roboto*/
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    padding-left: 5px;
+}
+
+.app__chart-agents {
+    display: flex; 
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.app__chart-month {
+    font-family: var(--font-base);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #B9B9B9;
+}
+
+.app__chart-agent-stat {
+    font-family: var(--font-base); /* Robot*/
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #171717;
+    padding-left: 1rem;
+}
+.app__chart-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 19px;
+    margin-left: 3.5rem;
+}
+.app__chart-agent-align {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 1.5rem;
+}
+
+.rectangle {
+    width: 8px;
+    height: 8px;
+}
+
+.app__chart-barchart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 334px;
+    width: 400px;
+    background: linear-gradient(135deg, #990D81 0%, #861072 100%);
+    border-radius: 12px;
+    margin-right: 28px;
+}
+
+.app__chart-barchart-text {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 23px;
+    margin-bottom: 23px;
+}
+
+.app__chart-barchart-text-down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.NewUsers {
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.percentage {
+    font-family: var(--font-alt);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.lastweek {
+    font-family: var(--font-alt);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #ffffff;
+    padding-left: 5px;
+}
