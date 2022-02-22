@@ -60,8 +60,8 @@ export default function AcccessibleTable() {
                 </div>
               </TableCell>
              <TableCell  className="table-type" align="right">{row.type}</TableCell>
-              <TableCell className="table-status" align="right">{row.status}</TableCell>
-              <TableCell className="table-date" align="right">{row.date}</TableCell>
+              <TableCell className="table-status" align="right"><div className={row.status === 'Pending' ? 'color-pending' : 'color-active'}>{row.status}</div></TableCell>
+              <TableCell className="table-date" align="right"><div className="date">{row.date}</div></TableCell>
               <TableCell align="right"><img  src={arrowRight} alt="arrow-right" /></TableCell>
             </TableRow>
           ))}

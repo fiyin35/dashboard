@@ -76,3 +76,17 @@
     line-height: 19px !important;
     color: #8392AB !important;
 }
+
+.color-pending{
+    color: #FFB648;
+}
+.color-active{
+    color: var(--color-success);
+}
+.status {
+    color: #FFB648;
+}
+
+.date {
+    color: #990D81;
+}
