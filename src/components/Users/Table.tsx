@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Table from '@mui/material/Table';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
@@ -53,7 +52,7 @@ export default function AcccessibleTable() {
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
                 <div className="table-name">
-                   <div> <img src={team1} alt="avatar"/> </div> 
+                   <div> <img src={row.avatar} alt="avatar"/> </div> 
                    <div className="table-title"> 
                       <div className="tablename">{row.name}</div> <div className="table-email">{row.email}</div> 
                    </div> 
