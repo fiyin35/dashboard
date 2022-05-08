@@ -10,7 +10,7 @@
 }
 
 .app__chart-stat {
-    min-width: 850px;
+    /* min-width: 850px; */
     width: 850px;
     height: 334px;
     border-radius: 10px;
